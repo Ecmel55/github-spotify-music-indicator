@@ -1,4 +1,4 @@
-# github-spotify-music-indicator
+# GitHub Spotify Music Indicator
 Changes GitHub bio with currently playing music from Spotify.
 
 ## TODO
