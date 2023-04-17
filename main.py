@@ -39,7 +39,7 @@ while True:
     current_track = current_track.json()
     if current_track["is_playing"]:
         song_name = f"{current_track['item']['name']} ({', '.join([artist['name'] for artist in current_track['item']['artists']])})"
-        requests.patch("https://api.github.com/user", headers=github_headers, data=json.dumps({'bio': f'Now listening: {song_name}'}))
+        requests.patch("https://api.github.com/user", headers=github_headers, data=json.dumps({"bio": f"Now listening: {song_name}"}))
     else:   
         requests.patch("https://api.github.com/user", headers=github_headers, data=json.dumps({"bio": current_bio}))
     time.sleep(5)
